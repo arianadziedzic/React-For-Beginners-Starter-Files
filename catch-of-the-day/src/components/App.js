@@ -4,6 +4,26 @@ import Order from './Order';
 import Inventory from './Inventory';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    //  get initial state
+    this.state = {
+      fishes: {},
+      order: {}
+    };
+
+    this.addFish = this.addFish.bind(this);
+  }
+  addFish(fish) {
+    // update state
+    // ... is the spread. below is taking a copy of the state
+    const fishes = {...this.state.fishes};
+    // timestamps, in order to assign it to fish instance on creation
+    const timestamp = Date.now();
+    fishes[`fish-${timestamp}`] = fish;
+    // sets state
+    this.setState({ fishes });
+  }
   render() {
     return (
       <div className="catch-of-the-day">
@@ -11,7 +31,7 @@ class App extends React.Component {
           <Header tagline="Fresh Seafood Market"/>
         </div>
         <Order />
-        <Inventory />
+        <Inventory addFish={this.addFish}/>
       </div>
     );
   }
