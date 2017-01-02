@@ -1,54 +1,39 @@
 ![](http://wes.io/dgAQ/content)
+# React For Beginners
+Today I finished the Wes Bos [React for Beginners Course](https://reactforbeginners.com/) and boy is Wes a Boss. Never heard of him or his super duper course? Check out the details below:
 
-# React For Beginners — [ReactForBeginners.com](https://ReactForBeginners.com)
+### Who is Wes Bos?
+Wes Bos is a Full Stack Canadian Developer, who has taught over 500 students in 200+ classes, plus thousands of developers through online courses/videos. He knows his stuff and he knows how to set developers up for success.
 
-Starter files for the React For Beginners course. Come <a href="https://ReactForBeginners.com/">Learn React</a> with me!
+### What is the React for Beginners Course?
+It's a fantastic resource that Wes Bos put together for React newbees, which teaches you, through video and corresponding exercises/app build, what React is about.
 
-The code in this repo meant to be a reference point for anyone following along with the video course.
+### How do I get started!
+![WES BOS](https://pragmaticstudio.com/images/blog/react-for-beginners.png)
 
-## To Start
+Here's the step process to getting you signed up and set up for the course:
 
-1. cd into `catch-of-the-day` and follow along with the videos
+1. Go to <a href="https://reactforbeginners.com/">React for Beginners</a> to sign up.
 
-The `stepped-solutions` Each folder contains the files for the beginning of each video should you need them. So, if you need any code, pull the appropriate file into your `catch-of-the-day` folder!
+2. You'll receive an email invite to join the React Course and the Slack channel. Follow the prompts to complete registration.
 
-You are welcome to submit Pull Requests but I'd like to keep the code as similar as possible to the course content.
+3. Once logged in to the React course on his website, click on the **Starter Files** link beneath the course description. This will take you to Wes's Github Repo.
 
-### Code Use
+4. **Fork** the **React-For-Beginners-Starter-Files** repo, so that you have a copy of the starter files in your GitHub account.
 
-You are welcome to use this code in your own applications. If you would like to use it for training purposes, please shoot me a message first to make sure it's okay.
+4. Now git clone your forked copy, so that it is local to your computer.
 
+5. From there, change directories into `catch-of-the-day`. You have set up the playground to work in! Niiiiiiice.
 
-# Frequently Asked Questions
+6. Now go back to the Wes Bos React Course in the browser and you'll see the option to stream the course videos or download them. You pick!
 
-#### :question: Where are folders `2`, `3`, and `5`?
-Not all the videos have significant enough code changes to warrant an entire folder. Although you should be coding them all yourself, the code is available in the next video's folder.
+7. You're set! Jump in.
 
-#### :question: I tried installing the Babel syntax highlighter but it didn't work!
+### Need Help?
+No worries, we all do! Within the starter folder, you'll find a `stepped-solutions` folder. Each folder contains the files for the beginning of each video, so if you need any code, pull the appropriate file into your `catch-of-the-day` folder!
 
-There are a few possible options:
+### Build Preview
+Curious as to what you're building? Check out my version <a href="https://ns-brmardsmyn.now.sh">here</a>. PS - I did not implement authorization and deployed with now.sh.
 
-* If you are on Sublime Text 2, you should Upgrade to Sublime Text 3.
-* Some users have reported restarting works
-* You can try the [JavaScript Next](https://packagecontrol.io/packages/JavaScriptNext%20-%20ES6%20Syntax) syntax highlighter instead
-
-#### :question: I can't set Babel as the default syntax highlighter!
-
-Make sure you are in a file with the extension of `.js` before you do this step - you can't set the default for a file without having a file open!
-
-#### :question: I can't see the React tab in my dev tools
-
-Restart your dev tools or your chrome browser entirely. They will only show up when you are viewing a React app - so make sure you test it on Facebook or another website that is running React. It won't work on your empty `main.js` file until you `import React from 'react'`.
-
-#### :question: `npm start` doesn't update the app on file save, or doesn't run correctly.
-
-There may be a few different causes for this:
- - Webpack currently can't handle folder/file names that contain parentheses.
- - Webpack also has problems running inside folders for Dropbox/Google Drive type services. Git is recommended for keeping your files in sync across multiple computers.
-
-#### :question: What Sublime Text Packages are you using? What Terminal Theme?
-
-* I've written indepth over at [WesBos.com/uses](http://wesbos.com/uses)
-* Theme + Colour Scheme → [Cobalt 2](https://packagecontrol.io/packages/Theme%20-%20Cobalt2)
-* JS Syntax Highlighting → [Babel](https://packagecontrol.io/packages/Babel)
-* HTML + CSS Shortcuts → [Emmet](https://packagecontrol.io/packages/Emmet) — You can [get emmet working with JSX here](http://wesbos.com/emmet-react-jsx-sublime/)
+### Acknowledgements
+Wes Bos. Duh.

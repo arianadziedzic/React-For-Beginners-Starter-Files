@@ -1,7 +1,8 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/local/Cellar/node/6.2.2/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'run',
+1 verbose cli   'build' ]
 2 info using npm@3.9.5
 3 info using node@v6.2.2
 4 verbose config Skipping project config: /Users/ariana/.npmrc. (matches userconfig)
@@ -9,7 +10,7 @@
 5 verbose stack     at Error (native)
 6 verbose cwd /Users/ariana/wes_bos/React-For-Beginners-Starter-Files
 7 error Darwin 15.6.0
-8 error argv "/usr/local/Cellar/node/6.2.2/bin/node" "/usr/local/bin/npm" "start"
+8 error argv "/usr/local/Cellar/node/6.2.2/bin/node" "/usr/local/bin/npm" "run" "build"
 9 error node v6.2.2
 10 error npm  v3.9.5
 11 error path /Users/ariana/package.json
