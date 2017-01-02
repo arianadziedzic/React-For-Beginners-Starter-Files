@@ -5,3 +5,41 @@
   appear Must set transitionAppear={true} on animation component
 */
 
+/*every transition needs an entry (a point) and exit (b point)*/
+
+/*Animates the order sliding into place*/
+.order-enter
+  transition all 0.5s
+  transform translateX(-120%)
+  max-height 0
+  padding 0 !important
+  &.order-enter-active
+    max-height 60px
+    padding 2rem 0 !important
+    transform translate(0)
+
+/*Animates the order sliding out*/
+.order-leave
+  transition all 0.5s
+  transform translateX(0)
+  &.order-leave-active
+    transform translateX(120%)
+    max-height 0
+    padding 0
+
+/*Animates the counter change*/
+.count-enter
+  transition all .25s
+  transform translateY(100%)
+  &.count-enter-active
+    transform translateY(0)
+
+
+.count-leave
+  transition all .25s
+  position absolute
+  left 0
+  bottom 0
+  transform translateY(0)
+  &.count-leave-active
+    transform translateY(-100%)
