@@ -19,6 +19,7 @@ class App extends React.Component {
     this.loadSamples = this.loadSamples.bind(this);
     this.addToOrder = this.addToOrder.bind(this);
     this.updateFish = this.updateFish.bind(this);
+    this.removeFromOrder = this.removeFromOrder.bind(this);
   }
   componentWillMount() {
     // this runs right before the app is rendered
@@ -65,6 +66,11 @@ class App extends React.Component {
     fishes[key] = updatedFish;
     this.setState({ fishes });
   }
+  removeFromOrder(key) {
+    const order = {...this.state.order};
+    delete order[key];
+    this.setState({ order });
+  }
   addToOrder(key) {
     const order = {...this.state.order};
     // update or add the new number of fish ordered
@@ -89,6 +95,7 @@ class App extends React.Component {
           fishes={this.state.fishes}
           order={this.state.order}
           params={this.props.params}
+          removeFromOrder={this.removeFromOrder}
         />
         <Inventory
           addFish={this.addFish}
